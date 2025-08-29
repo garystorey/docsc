@@ -1,5 +1,8 @@
 # Blazor Web Application Architecture Summary
 
+Only use Blazor if required by the client. Otherwise choose a different framework.
+MS doesnt even use it.
+
 ## Architectural Principles
 
 | Principle                          | Decision                                                                 |

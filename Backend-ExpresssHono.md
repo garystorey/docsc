@@ -4,7 +4,7 @@
 
 **Purpose:**
 
-Define standards and practices for building reliable, secure, and performant HTTP APIs with TypeScript using Express or Hono.
+Define standards and practices for building reliable, secure, and performant HTTP APIs with TypeScript using Express or Hono. Refer to [TypeScript](./TypeScript.md) for best practices.
 
 **Scope:**
 
@@ -70,6 +70,8 @@ Backend developers, reviewers, QA, and tech leads.
 - No `any` in production code; use `unknown` + narrowing.
 - Pure utilities in `utils/` remain side-effect free.
 - Avoid global singletons except injected infra (logger, DB pool).
+- Prefer early returns over nested `if`/`elif`/`else` blocks.
+- Prefer validation libraries over custom validations unless necesary.
 
 **Recommended tools:**
 
@@ -102,7 +104,7 @@ Backend developers, reviewers, QA, and tech leads.
 
 **Recommended tools:**
 
-- [Zod](https://zod.dev/) (primary) • Alternatives: [Valibot](https://valibot.dev/), [Yup](https://github.com/jquense/yup)  
+- [Zod](https://zod.dev/) (primary) • Alternatives: [Valibot](https://valibot.dev/), [ArkType](https://arktype.io/)  
 - API docs generators: [zod-openapi](https://github.com/asteasolutions/zod-to-openapi), [zod-to-json-schema](https://github.com/StefanTerdell/zod-to-json-schema)  
 
 ---

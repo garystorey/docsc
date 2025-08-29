@@ -188,7 +188,7 @@ export function useCounter() {
 
 ## 10. Styling Integration
 
-- Follow the **CSS Foundation**:
+- Follow the [CSS Foundation](./CSS.md):
   - All colors via **CSS custom properties**.
   - Use `background-color` (not shorthand) unless combining properties.
   - **Responsive units** by default; `px` only if **< 8px**.
@@ -212,7 +212,7 @@ export function useCounter() {
 
 ## 12. SSR, SSG & Hydration
 
-- Add SSR and enable **hydration** for faster first paint and SEO.
+- Add SSR and enable **hydration** for faster first paint and SEO as needed.
 - Author server-compatible code (no direct DOM globals during SSR).
 - Consider SSG for mostly static sections.
 
@@ -253,6 +253,7 @@ export function useCounter() {
 
 ## 15. Accessibility (A11y)
 
+- refer to [HTML](./HTML.md)
 - Prefer semantic elements; ARIA only to fill gaps.
 - Maintain visible focus and logical tab order.
 - Associate labels/help/error text with controls; announce dynamic updates appropriately.

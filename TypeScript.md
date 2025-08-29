@@ -51,11 +51,10 @@ Use **ES modules**. Prefer **named exports** for utilities and components.
 - Prefer immutability (copy, don’t mutate).  
 - camelCase for variables and functions.  
 - PascalCase for classes and types.  
-- kebab-case for filenames.  
 - No `any` in production; use `unknown` with narrowing.  
 - Model API payloads with **types and runtime validation**.  
 - Prefer a validation library like Zod, Valibot or ArkType over standard validation.
-- ESLint + Prettier enforced in CI.  
+- ESLint + Prettier or Biome enforced in CI.  
 - Prefer types over interfaces.  Use interface when client facing or creating a library.
 - Extend from base line elements when possible.
 
